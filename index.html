@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GAPP-Shop</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div id="background-upper">
+  <div class="jumbotron text-center">
+    <h1>GAPP - Gamesshop</h1>
+    <p>Games, Apps und vieles mehr...</p>
+  </div>
+
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="page/canvas.html">Canvas</a></li>
+      <li><a href="page/games.html">Games</a></li>
+      <li><a href="page/apps.html">Apps</a></li>
+      <li><a href='page/contact.html'>Kontakt</a></li>
+    </ul>
+
+    <form class="navbar-form navbar-right">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Suchen...">
+      </div>
+      <button type="submit" class="btn btn-default">Go!</button>
+    </form>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="page/404.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+    </ul>
+  </div>
+  </nav>
+
+ <!-- Hier Contentbereich-->
+ <div class="container">
+    <div class="row">
+        <div class="row">
+            <div class="col-md-9">
+                <h3>Jetzt neu...</h3>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <div id="carousel-example" class="carousel slide hidden-xs" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="col-item">
+                                <div class="photo">
+                                    <img src="images/bf1.png" class="img-responsive" alt="a" />
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="price col-md-6">
+                                            <h5>
+                                                Battlefield 1</h5>
+                                            <h5 class="price-text-color">
+                                                43,99 €</h5>
+                                        </div>
+                                        <div class="rating hidden-sm col-md-6">
+                                            <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                            </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                            </i><i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="separator clear-left">
+                                         <button type="button" class="btn btn-success">in den Warenkorb</button>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="col-item">
+                                <div class="photo">
+                                    <img src="images/cr.png" class="img-responsive" alt="a" />
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="price col-md-6">
+                                            <h5>
+                                                Clash Royal</h5>
+                                            <h5 class="price-text-color">
+                                                free</h5>
+                                        </div>
+                                        <div class="rating hidden-sm col-md-6">
+                                        </div>
+                                    </div>
+                                    <div class="separator clear-left">
+                                         <button type="button" class="btn btn-success">in den Warenkorb</button>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="col-item">
+                                <div class="photo">
+                                    <img src="images/wd2.png" class="img-responsive" alt="a" />
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="price col-md-6">
+                                            <h5>
+                                                Watch Dogs 2 - Deluxe Edition</h5>
+                                            <h5 class="price-text-color">
+                                                36,99 €</h5>
+                                        </div>
+                                        <div class="rating hidden-sm col-md-6">
+                                            <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                            </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                            </i><i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="separator clear-left">
+                                         <button type="button" class="btn btn-success">in den Warenkorb</button>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="col-item">
+                                <div class="photo">
+                                    <img src="images/re7.png" class="img-responsive" alt="a" />
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="price col-md-6">
+                                            <h5>
+                                                Resident Evil 7</h5>
+                                            <h5 class="price-text-color">
+                                                44,99 €</h5>
+                                        </div>
+                                        <div class="rating hidden-sm col-md-6">
+                                            <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                            </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                            </i><i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="separator clear-left">
+                                         <button type="button" class="btn btn-success">in den Warenkorb</button>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="col-item">
+                                <div class="photo">
+                                    <img src="images/planetcoaster.png" class="img-responsive" alt="a" />
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="price col-md-6">
+                                            <h5>
+                                                Planet Coaster</h5>
+                                            <h5 class="price-text-color">
+                                                39,99 €</h5>
+                                        </div>
+                                        <div class="rating hidden-sm col-md-6">
+                                            <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                            </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                            </i><i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="separator clear-left">
+                                         <button type="button" class="btn btn-success">in den Warenkorb</button>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="col-item">
+                                <div class="photo">
+                                    <img src="images/rl.png" class="img-responsive" alt="a" />
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="price col-md-6">
+                                            <h5>
+                                                Rocket League</h5>
+                                            <h5 class="price-text-color">
+                                                24,99 €</h5>
+                                        </div>
+                                        <div class="rating hidden-sm col-md-6">
+                                        </div>
+                                    </div>
+                                    <div class="separator clear-left">
+                                         <button type="button" class="btn btn-success">in den Warenkorb</button>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="col-item">
+                                <div class="photo">
+                                    <img src="images/coc.png" class="img-responsive" alt="a" />
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="price col-md-6">
+                                            <h5>
+                                                Clash of Clans</h5>
+                                            <h5 class="price-text-color">
+                                                free</h5>
+                                        </div>
+                                        <div class="rating hidden-sm col-md-6">
+                                            <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                            </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                            </i><i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="separator clear-left">
+                                         <button type="button" class="btn btn-success">in den Warenkorb</button>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="col-item">
+                                <div class="photo">
+                                    <img src="images/bloons.png" class="img-responsive" alt="a" />
+                                </div>
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="price col-md-6">
+                                            <h5>
+                                                Bloons TD5</h5>
+                                            <h5 class="price-text-color">
+                                                free</h5>
+                                        </div>
+                                        <div class="rating hidden-sm col-md-6">
+                                            <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                            </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                            </i><i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="separator clear-left">
+                                         <button type="button" class="btn btn-success">in den Warenkorb</button>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="container">
+     <div class="row">
+         <div class="row">
+             <div class="col-md-9">
+                 <h3>
+                     Top Spiele 2016</h3>
+             </div>
+             <div class="col-md-3"></div>
+         </div>
+         <div id="carousel-example" class="carousel slide hidden-xs" data-ride="carousel">
+             <!-- Wrapper for slides -->
+             <div class="carousel-inner">
+                 <div class="item active">
+                     <div class="row">
+                         <div class="col-sm-3">
+                             <div class="col-item">
+                                 <div class="photo">
+                                     <img src="images/ow.png" class="img-responsive" alt="a" />
+                                 </div>
+                                 <div class="info">
+                                     <div class="row">
+                                         <div class="price col-md-6">
+                                             <h5>
+                                                 Overwatch</h5>
+                                             <h5 class="price-text-color">
+                                                 29,99 €</h5>
+                                         </div>
+                                         <div class="rating hidden-sm col-md-6">
+                                             <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                             </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                             </i><i class="fa fa-star"></i>
+                                         </div>
+                                     </div>
+                                     <div class="separator clear-left">
+                                          <button type="button" class="btn btn-success">in den Warenkorb</button>
+                                     </div>
+                                     <div class="clearfix">
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-sm-3">
+                             <div class="col-item">
+                                 <div class="photo">
+                                     <img src="images/doom.png" class="img-responsive" alt="a" />
+                                 </div>
+                                 <div class="info">
+                                     <div class="row">
+                                         <div class="price col-md-6">
+                                             <h5>
+                                                 DOOM</h5>
+                                             <h5 class="price-text-color">
+                                                 49,99€</h5>
+                                         </div>
+                                         <div class="rating hidden-sm col-md-6">
+                                         </div>
+                                     </div>
+                                     <div class="separator clear-left">
+                                          <button type="button" class="btn btn-success">in den Warenkorb</button>
+                                     </div>
+                                     <div class="clearfix">
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-sm-3">
+                             <div class="col-item">
+                                 <div class="photo">
+                                     <img src="images/tf2.png" class="img-responsive" alt="a" />
+                                 </div>
+                                 <div class="info">
+                                     <div class="row">
+                                         <div class="price col-md-6">
+                                             <h5>
+                                                 Titanfall 2</h5>
+                                             <h5 class="price-text-color">
+                                                 37,99 €</h5>
+                                         </div>
+                                         <div class="rating hidden-sm col-md-6">
+                                             <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                             </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                             </i><i class="fa fa-star"></i>
+                                         </div>
+                                     </div>
+                                     <div class="separator clear-left">
+                                          <button type="button" class="btn btn-success">in den Warenkorb</button>
+                                     </div>
+                                     <div class="clearfix">
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-sm-3">
+                             <div class="col-item">
+                                 <div class="photo">
+                                     <img src="images/xcom2.png" class="img-responsive" alt="a" />
+                                 </div>
+                                 <div class="info">
+                                     <div class="row">
+                                         <div class="price col-md-6">
+                                             <h5>
+                                                 XCOM 2</h5>
+                                             <h5 class="price-text-color">
+                                                 49,99  €</h5>
+                                         </div>
+                                         <div class="rating hidden-sm col-md-6">
+                                             <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                             </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                             </i><i class="fa fa-star"></i>
+                                         </div>
+                                     </div>
+                                     <div class="separator clear-left">
+                                          <button type="button" class="btn btn-success">in den Warenkorb</button>
+                                     </div>
+                                     <div class="clearfix">
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="item">
+                     <div class="row">
+                         <div class="col-sm-3">
+                             <div class="col-item">
+                                 <div class="photo">
+                                     <img src="images/nms.png" class="img-responsive" alt="a" />
+                                 </div>
+                                 <div class="info">
+                                     <div class="row">
+                                         <div class="price col-md-6">
+                                             <h5>
+                                                 No Man’s Sky</h5>
+                                             <h5 class="price-text-color">
+                                                 39,99 €</h5>
+                                         </div>
+                                         <div class="rating hidden-sm col-md-6">
+                                             <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                             </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                             </i><i class="fa fa-star"></i>
+                                         </div>
+                                     </div>
+                                     <div class="separator clear-left">
+                                          <button type="button" class="btn btn-success">in den Warenkorb</button>
+                                     </div>
+                                     <div class="clearfix">
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-sm-3">
+                             <div class="col-item">
+                                 <div class="photo">
+                                     <img src="images/cod_iw.png" class="img-responsive" alt="a" />
+                                 </div>
+                                 <div class="info">
+                                     <div class="row">
+                                         <div class="price col-md-6">
+                                             <h5>
+                                                 Call of Duty: Infinite Warfare</h5>
+                                             <h5 class="price-text-color">
+                                                 39,99 €</h5>
+                                         </div>
+                                         <div class="rating hidden-sm col-md-6">
+                                         </div>
+                                     </div>
+                                     <div class="separator clear-left">
+                                          <button type="button" class="btn btn-success">in den Warenkorb</button>
+                                     </div>
+                                     <div class="clearfix">
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-sm-3">
+                             <div class="col-item">
+                                 <div class="photo">
+                                     <img src="images/civi6.png" class="img-responsive" alt="a" />
+                                 </div>
+                                 <div class="info">
+                                     <div class="row">
+                                         <div class="price col-md-6">
+                                             <h5>
+                                                 Civilization 6</h5>
+                                             <h5 class="price-text-color">
+                                                 44,99 €</h5>
+                                         </div>
+                                         <div class="rating hidden-sm col-md-6">
+                                             <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                             </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                             </i><i class="fa fa-star"></i>
+                                         </div>
+                                     </div>
+                                     <div class="separator clear-left">
+                                          <button type="button" class="btn btn-success">in den Warenkorb</button>
+                                     </div>
+                                     <div class="clearfix">
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-sm-3">
+                             <div class="col-item">
+                                 <div class="photo">
+                                     <img src="images/fifa17.png" class="img-responsive" alt="a" />
+                                 </div>
+                                 <div class="info">
+                                     <div class="row">
+                                         <div class="price col-md-6">
+                                             <h5>
+                                                 FIFA 17</h5>
+                                             <h5 class="price-text-color">
+                                                 22,99 €</h5>
+                                         </div>
+                                         <div class="rating hidden-sm col-md-6">
+                                             <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                             </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                             </i><i class="fa fa-star"></i>
+                                         </div>
+                                     </div>
+                                     <div class="separator clear-left">
+                                          <button type="button" class="btn btn-success">in den Warenkorb</button>
+                                     </div>
+                                     <div class="clearfix">
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+   </div>
+   <!-- DIV für background -->
+            </div>
+   <!-- DIV für background -->
+
+   <div id="background-eve">
+     <div id="eveimage">
+      <img src="images/eve_white.png" class="img-responsive" alt="">
+      <h3 id="eveonline"> Jetzt EVE Online Spielzeit kaufen </h3>
+     </div>
+    <div class="content-md container">
+        <div class="row">
+            <div class="col-md-4 md-margin-b-30">
+                <div class="pricing-list-v4 radius-10">
+                    <div class="pricing-list-v4-header">
+                        <h4 class="pricing-list-v4-title">1 Monat</h4>
+                        <span class="pricing-list-v4-subtitle">14,95 € insgesamt</span>
+                    </div>
+                    <div class="pricing-list-v4-content">
+                        <div class="margin-b-40">
+                            <span class="pricing-list-v4-price-sign"><i class="fa fa-dollar"></i></span>
+                            <span class="pricing-list-v4-price">14.</span>
+                            <span class="pricing-list-v4-subprice">95</span>
+                            <span class="pricing-list-v4-price-info">Monat</span>
+                        </div>
+                        <div class="center-block">
+                            <button type="button" class="btn-dark-brd btn-base-sm radius-3">Kaufen</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 md-margin-b-30">
+                <div class="pricing-list-v4 radius-10">
+                    <div class="pricing-list-v4-header">
+                        <h4 class="pricing-list-v4-title">6 Monate</h4>
+                        <span class="pricing-list-v4-subtitle">Sie sparen 18,00 €</span>
+                    </div>
+                    <div class="pricing-list-v4-content">
+                        <div class="margin-b-40">
+                            <span class="pricing-list-v4-price-sign"><i class="fa fa-dollar"></i></span>
+                            <span class="pricing-list-v4-price">11.</span>
+                            <span class="pricing-list-v4-subprice">95</span>
+                            <span class="pricing-list-v4-price-info">Monat</span>
+                        </div>
+                        <div class="center-block">
+                            <button type="button" class="btn-dark-brd btn-base-sm radius-3">Kaufen</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 md-margin-b-30">
+                <div class="pricing-list-v4 radius-10">
+                    <div class="pricing-list-v4-header">
+                        <h4 class="pricing-list-v4-title">12 Monate</h4>
+                        <span class="pricing-list-v4-subtitle">Sie sparen 48,00 €</span>
+                    </div>
+                    <div class="pricing-list-v4-content">
+                        <div class="margin-b-40">
+                            <span class="pricing-list-v4-price-sign"><i class="fa fa-dollar"></i></span>
+                            <span class="pricing-list-v4-price">10.</span>
+                            <span class="pricing-list-v4-subprice">95</span>
+                            <span class="pricing-list-v4-price-info">Monat</span>
+                        </div>
+                        <div class="center-block">
+                            <button type="button" class="btn-dark-brd btn-base-sm radius-3">Kaufen</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+   <div class="container">
+      <div class="row">
+          <div class="row">
+              <div class="col-md-9">
+                  <h3>
+                      Top Apps 2016</h3>
+              </div>
+              <div class="col-md-3"></div>
+          </div>
+          <div id="carousel-example" class="carousel slide hidden-xs" data-ride="carousel">
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                  <div class="item active">
+                      <div class="row">
+                          <div class="col-sm-3">
+                              <div class="col-item">
+                                  <div class="photo">
+                                      <img src="images/bslw.png" class="img-responsive" alt="a" />
+                                  </div>
+                                  <div class="info">
+                                      <div class="row">
+                                          <div class="price col-md-6">
+                                              <h5>
+                                                  Battleship Lonewolf</h5>
+                                              <h5 class="price-text-color">
+                                                  2,99 €</h5>
+                                          </div>
+                                          <div class="rating hidden-sm col-md-6">
+                                              <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                              </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                              </i><i class="fa fa-star"></i>
+                                          </div>
+                                      </div>
+                                      <div class="separator clear-left">
+                                           <button type="button" class="btn btn-success">in den Warenkorb</button>
+                                      </div>
+                                      <div class="clearfix">
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-sm-3">
+                              <div class="col-item">
+                                  <div class="photo">
+                                      <img src="images/bully.png" class="img-responsive" alt="a" />
+                                  </div>
+                                  <div class="info">
+                                      <div class="row">
+                                          <div class="price col-md-6">
+                                              <h5>
+                                                  Bully</h5>
+                                              <h5 class="price-text-color">
+                                                  6,99 €</h5>
+                                          </div>
+                                          <div class="rating hidden-sm col-md-6">
+                                          </div>
+                                      </div>
+                                      <div class="separator clear-left">
+                                           <button type="button" class="btn btn-success">in den Warenkorb</button>
+                                      </div>
+                                      <div class="clearfix">
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-sm-3">
+                              <div class="col-item">
+                                  <div class="photo">
+                                      <img src="images/sd.png" class="img-responsive" alt="a" />
+                                  </div>
+                                  <div class="info">
+                                      <div class="row">
+                                          <div class="price col-md-6">
+                                              <h5>
+                                                  Silent Depth</h5>
+                                              <h5 class="price-text-color">
+                                                  7,99 €</h5>
+                                          </div>
+                                          <div class="rating hidden-sm col-md-6">
+                                              <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                              </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                              </i><i class="fa fa-star"></i>
+                                          </div>
+                                      </div>
+                                      <div class="separator clear-left">
+                                           <button type="button" class="btn btn-success">in den Warenkorb</button>
+                                      </div>
+                                      <div class="clearfix">
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-sm-3">
+                              <div class="col-item">
+                                  <div class="photo">
+                                      <img src="images/tbb.png" class="img-responsive" alt="a" />
+                                  </div>
+                                  <div class="info">
+                                      <div class="row">
+                                          <div class="price col-md-6">
+                                              <h5>
+                                                  The Bug Butcher</h5>
+                                              <h5 class="price-text-color">
+                                                  3,99 €</h5>
+                                          </div>
+                                          <div class="rating hidden-sm col-md-6">
+                                              <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                              </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                              </i><i class="fa fa-star"></i>
+                                          </div>
+                                      </div>
+                                      <div class="separator clear-left">
+                                           <button type="button" class="btn btn-success">in den Warenkorb</button>
+                                      </div>
+                                      <div class="clearfix">
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="row">
+                          <div class="col-sm-3">
+                              <div class="col-item">
+                                  <div class="photo">
+                                      <img src="images/dcr.png" class="img-responsive" alt="a" />
+                                  </div>
+                                  <div class="info">
+                                      <div class="row">
+                                          <div class="price col-md-6">
+                                              <h5>
+                                                  Disney Crossy Road</h5>
+                                              <h5 class="price-text-color">
+                                                  free</h5>
+                                          </div>
+                                          <div class="rating hidden-sm col-md-6">
+                                              <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                              </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                              </i><i class="fa fa-star"></i>
+                                          </div>
+                                      </div>
+                                      <div class="separator clear-left">
+                                           <button type="button" class="btn btn-success">in den Warenkorb</button>
+                                      </div>
+                                      <div class="clearfix">
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-sm-3">
+                              <div class="col-item">
+                                  <div class="photo">
+                                      <img src="images/invisble.png" class="img-responsive" alt="a" />
+                                  </div>
+                                  <div class="info">
+                                      <div class="row">
+                                          <div class="price col-md-6">
+                                              <h5>
+                                                  Invisible, Inc.</h5>
+                                              <h5 class="price-text-color">
+                                                  4,99 €</h5>
+                                          </div>
+                                          <div class="rating hidden-sm col-md-6">
+                                          </div>
+                                      </div>
+                                      <div class="separator clear-left">
+                                           <button type="button" class="btn btn-success">in den Warenkorb</button>
+                                      </div>
+                                      <div class="clearfix">
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-sm-3">
+                              <div class="col-item">
+                                  <div class="photo">
+                                      <img src="images/minimetro.png" class="img-responsive" alt="a" />
+                                  </div>
+                                  <div class="info">
+                                      <div class="row">
+                                          <div class="price col-md-6">
+                                              <h5>
+                                                  Mini Metro</h5>
+                                              <h5 class="price-text-color">
+                                                  4,99 €</h5>
+                                          </div>
+                                          <div class="rating hidden-sm col-md-6">
+                                              <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                              </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                              </i><i class="fa fa-star"></i>
+                                          </div>
+                                      </div>
+                                      <div class="separator clear-left">
+                                           <button type="button" class="btn btn-success">in den Warenkorb</button>
+                                      </div>
+                                      <div class="clearfix">
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-sm-3">
+                              <div class="col-item">
+                                  <div class="photo">
+                                      <img src="images/retsnom.png" class="img-responsive" alt="a" />
+                                  </div>
+                                  <div class="info">
+                                      <div class="row">
+                                          <div class="price col-md-6">
+                                              <h5>
+                                                  Retsnom</h5>
+                                              <h5 class="price-text-color">
+                                                  0,99 €</h5>
+                                          </div>
+                                          <div class="rating hidden-sm col-md-6">
+                                              <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                              </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                              </i><i class="fa fa-star"></i>
+                                          </div>
+                                      </div>
+                                      <div class="separator clear-left">
+                                           <button type="button" class="btn btn-success">in den Warenkorb</button>
+                                      </div>
+                                      <div class="clearfix">
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+<hr />
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+			<div class="offer offer-default">
+				<div class="shape">
+					<div class="shape-text">
+						VIP
+					</div>
+				</div>
+				<div class="offer-content">
+					<h3 class="lead">
+						10 Bestellungen
+					</h3>
+					<p>
+						3% Rabatt
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+			<div class="offer offer-success">
+				<div class="shape">
+					<div class="shape-text">
+						VIP
+					</div>
+				</div>
+				<div class="offer-content">
+					<h3 class="lead">
+						50 Bestellungen
+					</h3>
+					<p>
+						5% Rabatt
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+			<div class="offer offer-primary">
+				<div class="shape">
+					<div class="shape-text">
+						VIP
+					</div>
+				</div>
+				<div class="offer-content">
+					<h3 class="lead">
+						100 Bestellungen
+					</h3>
+					<p>
+						10% Rabatt
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+			<div class="offer offer-info">
+				<div class="shape">
+					<div class="shape-text">
+						VIP
+					</div>
+				</div>
+				<div class="offer-content">
+					<h3 class="lead">
+						1000 Bestellungen
+					</h3>
+					<p>
+						15% Rabatt
+					</p>
+				</div>
+			</div>
+		</div>
+  </div>
+</div>
+<hr />
+<!-- Hier Contentbereich ENDE-->
+
+<footer class="container-fluid text-center">
+  <p>Gapp-Shop Copyright 2017</p>
+  <form class="form-inline">Unser Newsletter:
+    <input type="email" class="form-control" size="50" placeholder="Email Address">
+    <button type="button" class="btn btn-danger">Abonnieren</button>
+  </form>
+</footer>
+
+</body>
+</html>
